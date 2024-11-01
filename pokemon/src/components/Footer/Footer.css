@@ -1,0 +1,17 @@
+.footer {
+    background-color: red ; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid gold; 
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content p:first-child {
+    font-weight: bold;
+}

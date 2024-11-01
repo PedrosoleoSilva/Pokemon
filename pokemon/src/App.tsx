@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/Footer';
 import HeaderInicio from './components/HeaderInicio';
 import ListaPokemon from './components/ListaPokemon';
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <HeaderInicio/>
       <ListaPokemon/>
+      <Footer/>
     </div>
   );
 }
