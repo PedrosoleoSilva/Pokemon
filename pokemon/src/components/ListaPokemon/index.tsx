@@ -20,6 +20,8 @@ const Pokemon = ({ data }: { data: PokemonProps }) => {
             try {
                 const response = await axios.get(data.url);
                 setDetails(response.data);
+
+
             } catch (error) {
                 console.error("Erro ao buscar detalhes do Pokémon:", error);
             }
@@ -30,10 +32,12 @@ const Pokemon = ({ data }: { data: PokemonProps }) => {
     return (
         <div className="card">
             <img src={details?.sprites.front_default} alt={data.name} />
-            <div>
-                <p>{data.name}</p>
+            <div className="container-info">
+                <div className="texto-name">
+                    <p>{data.name}</p>
+                </div>
                 <div className="container-exp">
-                    <p className="corExp">EXP<p>{details?.base_experience}</p></p>
+                    <p className="corExp">EXP<p style={{ marginLeft: '5px' }}>{details?.base_experience}</p></p>
                 </div>
             </div>
         </div>

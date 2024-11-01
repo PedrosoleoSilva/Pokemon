@@ -1,11 +1,11 @@
 import './App.css';
-import Banner from './components/Banner';
+import HeaderInicio from './components/HeaderInicio';
 import ListaPokemon from './components/ListaPokemon';
 
 function App() {
   return (
     <div className="App">
-      <Banner/>
+      <HeaderInicio/>
       <ListaPokemon/>
     </div>
   );

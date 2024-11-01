@@ -1,0 +1,15 @@
+.header {
+    background-color: red;
+    margin: 0 auto;
+    height: 60px;
+    width: 100%;
+    display: flex;
+}
+
+.header img {
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
